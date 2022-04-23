@@ -1,3 +1,5 @@
+const { moveCommands, messages } = require("./constants");
+
 // Stores the active TCP connection object.
 let connection;
 
@@ -13,18 +15,6 @@ const setupInput = function(conn) {
   return stdin;
 };
 
-const moveCommands = {
-  w: "up",
-  a: "left",
-  s: "down",
-  d: "right"
-}
-
-const messages = {
-  q: "sucker",
-  w: "oopsoopssss",
-  e: "uh oh"
-}
 
 const handleUserInput = function(key) {
   // your code here
