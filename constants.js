@@ -6,13 +6,13 @@ const moveCommands = {
   a: "left",
   s: "down",
   d: "right"
-}
+};
 
 const messages = {
   q: "sucker",
   r: "oopsoopssss",
   e: "uh oh"
-}
+};
 
 //Export
 
