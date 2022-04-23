@@ -19,6 +19,13 @@ const moveCommands = {
   s: "down",
   d: "right"
 }
+
+const messages = {
+  q: "sucker",
+  w: "oopsoopssss",
+  e: "uh oh"
+}
+
 const handleUserInput = function(key) {
   // your code here
   // \u0003 maps to ctrl+c input
@@ -27,6 +34,9 @@ if (key === '\u0003') {
 }
 if (moveCommands[key]) {
   connection.write(`Move: ${moveCommands[key]}`)
+}
+if (messages[key]) {
+  connection.write(`Say: ${messages[key]}`)
 }
 // if (key === 'w') {
 //   connection.write("Move: up");
